@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Segoe UI", "Aptos", "Trebuchet MS", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e8eeff;
+  background: #050816;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #050816;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #e8eeff;
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.2), transparent 28%),
+    radial-gradient(circle at top right, rgba(6, 182, 212, 0.16), transparent 26%),
+    linear-gradient(180deg, #050816 0%, #04050d 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 95%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 30%, rgba(5, 8, 22, 0.25) 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.section-shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.glass-card {
+  backdrop-filter: blur(18px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff 8%, #aa3bff 42%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 0.35rem;
+  transition: color 180ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: center;
+  background: linear-gradient(90deg, #c084fc, #22d3ee);
+  transition: transform 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #ffffff;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 640px) {
+  .section-shell {
+    width: min(100%, calc(100% - 1rem));
+  }
+}
