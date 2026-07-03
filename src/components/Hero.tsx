@@ -65,13 +65,14 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="/Seema_Bhardwaj.pdf"
-              className="inline-flex min-w-[180px] items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-cyan-500 px-6 py-4 font-semibold text-white shadow-[0_20px_50px_rgba(99,102,241,0.3)] transition hover:scale-[1.02] max-sm:w-full"
-            >
-              <FiDownload className="text-lg" />
-              Download Resume
-            </a>
+           <a
+  href="/Seema_Bhardwaj.pdf"
+  download="Seema_Bhardwaj_Resume.pdf"
+  className="inline-flex min-w-[180px] items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-cyan-500 px-6 py-4 font-semibold text-white"
+>
+  <FiDownload className="text-lg" />
+  Download Resume
+</a>
 
             <a
               href="https://www.linkedin.com/in/seema-bhardwaj-3b1ba5214?utm_source=share_via&utm_content=profile&utm_medium=member_android"
