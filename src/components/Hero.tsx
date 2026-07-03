@@ -66,7 +66,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="/Seema_Bhardwaj.docs"
+              href="/Seema_Bhardwaj.pdf"
               className="inline-flex min-w-[180px] items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-cyan-500 px-6 py-4 font-semibold text-white shadow-[0_20px_50px_rgba(99,102,241,0.3)] transition hover:scale-[1.02] max-sm:w-full"
             >
               <FiDownload className="text-lg" />
