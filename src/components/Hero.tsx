@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiArrowDown, FiDownload, FiMail, FiBriefcase, FiLayers } from "react-icons/fi";
-import { SiLaravel, SiMysql, SiNodedotjs, SiReact, SiRedis } from "react-icons/si";
+import { SiLaravel, SiMysql, SiNodedotjs,  SiRedis } from "react-icons/si";
 import AboutSection from "./About";
 import SkillsSection from "./Skills";
 import ProjectsSection from "./Projects";
@@ -10,7 +10,6 @@ import heroGraphic from "../assets/hero.png";
 const floatingTech = [
   { label: "Laravel", icon: SiLaravel, className: "left-[6%] top-[12%] border-rose-400/35 text-rose-100" },
   { label: "Node.js", icon: SiNodedotjs, className: "right-[4%] top-[11%] border-lime-400/35 text-lime-100" },
-  { label: "React", icon: SiReact, className: "left-[8%] bottom-[12%] border-sky-400/35 text-sky-100" },
   { label: "MySQL", icon: SiMysql, className: "left-[0%] top-[45%] border-cyan-400/35 text-cyan-100" },
   { label: "AWS", icon: FiBriefcase, className: "right-[0%] top-[46%] border-amber-400/35 text-amber-100" },
   { label: "Redis", icon: SiRedis, className: "left-[16%] bottom-[7%] border-red-400/35 text-red-100" },
